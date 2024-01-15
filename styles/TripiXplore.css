@@ -315,6 +315,60 @@ body {
 .offer-3 p {
   color: var(--color-plate3);
 }
+/* newsletter styles */
+#newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 100px 0px;
+  position: relative;
+}
+.subscribe-form {
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 40px;
+}
+.subscribe-form h4 {
+  font-size: 1.25rem;
+}
+.subscribe-form p {
+  color: var(--color-plate3);
+  margin: 20px 0px;
+}
+.news-hr {
+  height: 1px;
+  width: 100%;
+  background: rgba(19, 19, 24, 0.1);
+  margin: 24px 0px;
+}
+.news-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.news-form input {
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  padding: 20px 16px;
+  color: rgba(19, 19, 24, 0.3);
+  border: none;
+}
+.news-form input:focus {
+  outline: 0;
+}
+.newsletter-img button {
+  font-weight: 400;
+  transform: rotate(-30deg);
+  position: absolute;
+  bottom: 61px;
+  right: 5px;
+}
+.newsletter-img button > span {
+  font-weight: 800;
+  display: block;
+}
 
 /* footer style */
 #footer {
@@ -411,7 +465,8 @@ Responsive Styles
   .tour-image > img {
     width: 100%;
   }
-  #destination {
+  #destination,
+  #newsletter {
     margin: 30px 0px;
   }
   .first-choice,
@@ -439,6 +494,12 @@ Responsive Styles
   .offer-2 h4,
   .offer-3 h4 {
     font-size: 1.25rem;
+  }
+  #newsletter {
+    flex-direction: column;
+  }
+  .newsletter-img img {
+    width: 100%;
   }
   .footer-text {
     width: 85%;
@@ -480,7 +541,8 @@ Responsive Styles
   .tour-image > img {
     width: 100%;
   }
-  #destination {
+  #destination,
+  #newsletter {
     margin: 50px 0px;
   }
   .second-choice {
@@ -499,6 +561,16 @@ Responsive Styles
   .maldives,
   .indonesia {
     border-radius: 16px;
+  }
+  #newsletter {
+    flex-direction: column;
+  }
+  .newsletter-img img {
+    width: 100%;
+  }
+  .newsletter-img button {
+    bottom: 61px;
+    right: 50px;
   }
   .footer-text {
     width: 85%;
