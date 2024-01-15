@@ -114,7 +114,9 @@ body {
 .banner-text {
   color: #fff;
 }
-.banner-text > span {
+.banner-text > span,
+.destination-text > span,
+.choose-us-text > span {
   display: block;
 }
 .banner-search {
@@ -182,9 +184,6 @@ body {
 .destination-text {
   color: var(--color-plate2);
   margin: 24px 0px;
-}
-.destination-text > span {
-  display: block;
 }
 .first-choice {
   display: grid;
@@ -265,6 +264,57 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
+/* choose us styles */
+#choose-us h2 {
+  text-align: center;
+}
+.choose-us-text {
+  color: var(--color-plate2);
+  text-align: center;
+  margin: 24px 0px;
+}
+.choose-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+.offer-1,
+.offer-2,
+.offer-3 {
+  padding: 32px;
+  border-radius: 16px;
+}
+.offer-1,
+.offer-3 {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.offer-2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.offer-3 {
+  width: 550px;
+  margin: 24px auto 0px auto;
+}
+.offer-1 img,
+.offer-2 img,
+.offer-3 img {
+  width: 64px;
+  height: 64px;
+}
+.offer-1 h4,
+.offer-2 h4,
+.offer-3 h4 {
+  font-size: 1.5rem;
+  margin: 20px 0px;
+}
+.offer-1 p,
+.offer-2 p,
+.offer-3 p {
+  color: var(--color-plate3);
+}
 
 /* footer style */
 #footer {
@@ -331,7 +381,8 @@ Responsive Styles
   }
   .banner-title,
   #destination h2,
-  .tour-content h2 {
+  .tour-content h2,
+  #choose-us h2 {
     font-size: 1.25rem;
   }
   .banner-text > span {
@@ -352,13 +403,16 @@ Responsive Styles
     padding: 14px 70px;
   }
   #main {
-    margin: 24px 20px;
+    margin: 40px 20px;
   }
   #popular-tours {
     flex-direction: column;
   }
   .tour-image > img {
     width: 100%;
+  }
+  #destination {
+    margin: 30px 0px;
   }
   .first-choice,
   .second-choice,
@@ -374,6 +428,17 @@ Responsive Styles
   .indonesia {
     height: 176px;
     border-radius: 16px;
+  }
+  .choose-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .offer-3 {
+    width: 100%;
+  }
+  .offer-1 h4,
+  .offer-2 h4,
+  .offer-3 h4 {
+    font-size: 1.25rem;
   }
   .footer-text {
     width: 85%;
@@ -407,13 +472,16 @@ Responsive Styles
     left: 647px;
   }
   #main {
-    margin: 48px 20px;
+    margin: 60px 20px;
   }
   #popular-tours {
     flex-direction: column;
   }
   .tour-image > img {
     width: 100%;
+  }
+  #destination {
+    margin: 50px 0px;
   }
   .second-choice {
     grid-template-columns: repeat(3, 1fr);
