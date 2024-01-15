@@ -125,13 +125,13 @@ body {
   display: flex;
   gap: 1.5rem;
   position: relative;
+  align-items: center;
 }
 .banner-search input {
   color: rgba(19, 19, 24, 0.5);
   border-radius: 8px;
   border: none;
-  padding-left: 10px;
-  padding-right: 12px;
+  padding: 20px 10px 20px 12px;
 }
 .banner-search input:focus {
   outline: 0;
@@ -142,11 +142,11 @@ body {
   left: 381px;
   color: rgba(19, 19, 24, 0.5);
 }
-.type-search-icon{
-    position: absolute;
-    top: 35px;
-    left: 590px;
-    color: rgba(19, 19, 24, 0.5);
+.type-search-icon {
+  position: absolute;
+  top: 35px;
+  left: 590px;
+  color: rgba(19, 19, 24, 0.5);
 }
 .banner-btn {
   display: flex;
@@ -172,6 +172,37 @@ Responsive Styles
     width: 1.75rem;
     cursor: pointer;
   }
+  .banner-content {
+    gap: 1rem;
+  }
+  .banner-search {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .banner-title {
+    font-size: 22px;
+  }
+  .banner-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .banner-text > span {
+    display: inline;
+  }
+  .banner-search input {
+    padding: 20px 76px 20px 24px;
+  }
+  .when-search-icon {
+    top: 113px;
+    left: 250px;
+  }
+  .type-search-icon {
+    top: 191px;
+    left: 250px;
+  }
+  .banner-btn {
+    padding: 14px 70px;
+  }
 }
 /* ==> Tablet Device */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
@@ -180,5 +211,21 @@ Responsive Styles
   }
   .nav-menu {
     gap: 1.5rem;
+  }
+  .banner-search {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .banner-search input {
+    padding: 20px 10px 20px 12px;
+  }
+  .when-search-icon {
+    top: 32px;
+    left: 440px;
+  }
+  .type-search-icon {
+    top: 32px;
+    left: 647px;
   }
 }
