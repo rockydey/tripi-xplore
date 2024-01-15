@@ -157,7 +157,7 @@ body {
 /* main style */
 #main {
   max-width: 1170px;
-  margin: 50px auto 100px auto;
+  margin: 100px auto 100px auto;
 }
 /* popular tours styles */
 #popular-tours {
@@ -173,6 +173,97 @@ body {
 #popular-tours li {
   margin: 12px 0px;
   color: var(--color-plate3);
+}
+/* destination style */
+#destination {
+  margin: 100px 0px;
+  text-align: center;
+}
+.destination-text {
+  color: var(--color-plate2);
+  margin: 24px 0px;
+}
+.destination-text > span {
+  display: block;
+}
+.first-choice {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.maldives {
+  height: 300px;
+  background-image: url("../assets/Images/Rectangle\ 5.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.indonesia {
+  height: 300px;
+  background-image: url("../assets/Images/Rectangle 8.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.maldives h4,
+.indonesia h4,
+.srilanka h4,
+.north-america h4,
+.kashmir h4,
+.bangladesh h4,
+.bandarban h4 {
+  background: linear-gradient(
+    180deg,
+    hsla(240, 12%, 8%, 0.5) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
+  border-radius: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+.second-choice {
+  display: grid;
+  grid-template-columns: 374px 474px 274px;
+  gap: 1.5rem;
+  margin: 24px 0px;
+}
+.srilanka {
+  height: 286px;
+  background-image: url("../assets/Images/Rectangle 6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.north-america {
+  height: 286px;
+  background-image: url("../assets/Images/Rectangle 7.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.kashmir {
+  height: 286px;
+  background-image: url("../assets/Images/Rectangle 9.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.third-choice {
+  display: grid;
+  grid-template-columns: 473px 673px;
+  gap: 1.5rem;
+}
+.bangladesh {
+  height: 300px;
+  background-image: url("../assets/Images/Rectangle 11.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bandarban {
+  height: 300px;
+  background-image: url("../assets/Images/Rectangle 10.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* footer style */
@@ -238,12 +329,10 @@ Responsive Styles
     flex-direction: column;
     margin-top: 16px;
   }
-  .banner-title {
-    font-size: 22px;
-  }
-  .banner-text {
-    font-size: 14px;
-    line-height: 21px;
+  .banner-title,
+  #destination h2,
+  .tour-content h2 {
+    font-size: 1.25rem;
   }
   .banner-text > span {
     display: inline;
@@ -270,6 +359,21 @@ Responsive Styles
   }
   .tour-image > img {
     width: 100%;
+  }
+  .first-choice,
+  .second-choice,
+  .third-choice {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .srilanka,
+  .bandarban,
+  .north-america,
+  .kashmir,
+  .bangladesh,
+  .maldives,
+  .indonesia {
+    height: 176px;
+    border-radius: 16px;
   }
   .footer-text {
     width: 85%;
@@ -310,6 +414,23 @@ Responsive Styles
   }
   .tour-image > img {
     width: 100%;
+  }
+  .second-choice {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+  .third-choice {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .srilanka,
+  .bandarban,
+  .north-america,
+  .kashmir,
+  .bangladesh,
+  .maldives,
+  .indonesia {
+    border-radius: 16px;
   }
   .footer-text {
     width: 85%;
