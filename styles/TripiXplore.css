@@ -315,13 +315,34 @@ body {
 .offer-3 p {
   color: var(--color-plate3);
 }
+/* award section */
+#award {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 100px 0px;
+  gap: 1.5rem;
+}
+.award-img img {
+  width: 90%;
+  border-radius: 16px;
+}
+.award-container h2 {
+  margin: 20px 0px;
+}
+.award-container p {
+  margin: 20px 0px;
+  color: var(--color-plate2);
+}
+.award-container img {
+  width: 64px;
+  height: 64px;
+}
 /* newsletter styles */
 #newsletter {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  margin: 100px 0px;
   position: relative;
 }
 .subscribe-form {
@@ -436,7 +457,8 @@ Responsive Styles
   .banner-title,
   #destination h2,
   .tour-content h2,
-  #choose-us h2 {
+  #choose-us h2,
+  .award-container h2 {
     font-size: 1.25rem;
   }
   .banner-text > span {
@@ -466,7 +488,7 @@ Responsive Styles
     width: 100%;
   }
   #destination,
-  #newsletter {
+  #award {
     margin: 30px 0px;
   }
   .first-choice,
@@ -494,6 +516,12 @@ Responsive Styles
   .offer-2 h4,
   .offer-3 h4 {
     font-size: 1.25rem;
+  }
+  #award {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .award-img img {
+    width: 100%;
   }
   #newsletter {
     flex-direction: column;
@@ -542,7 +570,7 @@ Responsive Styles
     width: 100%;
   }
   #destination,
-  #newsletter {
+  #award {
     margin: 50px 0px;
   }
   .second-choice {
@@ -561,6 +589,13 @@ Responsive Styles
   .maldives,
   .indonesia {
     border-radius: 16px;
+  }
+
+  #award {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .award-img img {
+    width: 100%;
   }
   #newsletter {
     flex-direction: column;
