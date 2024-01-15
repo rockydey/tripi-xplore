@@ -29,6 +29,8 @@ body {
   border-radius: 8px;
   background-color: var(--color-plate1);
   padding: 14px 35px;
+  border: none;
+  cursor: pointer;
 }
 .title-primary {
   color: var(--color-plate5);
@@ -51,6 +53,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
+  gap: 1.5rem;
 }
 .logo {
   display: flex;
@@ -80,8 +83,80 @@ body {
 .hamburger {
   display: none;
 }
+/* banner style */
+#banner {
+  min-height: 500px;
+  background-image: url("../assets/Images/Group 13 (1) (1).png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 16px;
+}
+.banner-content {
+  border-radius: 16px;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 24, 0.8) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+.banner-title {
+  font-size: 4rem;
+  color: #fff;
+}
+.banner-text {
+  color: #fff;
+}
+.banner-text > span {
+  display: block;
+}
+.banner-search {
+  margin-top: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 12px;
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+}
+.banner-search input {
+  color: rgba(19, 19, 24, 0.5);
+  border-radius: 8px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 12px;
+}
+.banner-search input:focus {
+  outline: 0;
+}
+.when-search-icon {
+  position: absolute;
+  top: 35px;
+  left: 381px;
+  color: rgba(19, 19, 24, 0.5);
+}
+.type-search-icon{
+    position: absolute;
+    top: 35px;
+    left: 590px;
+    color: rgba(19, 19, 24, 0.5);
+}
+.banner-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
 
-/* Responsive Styles */
+/* --------------
+Responsive Styles 
+-------------- */
 /* ==> Mobile Device */
 @media only screen and (max-width: 576px) {
   #header {
