@@ -173,7 +173,7 @@ body {
   font-size: 2rem;
 }
 .footer-text {
-  max-width: 760px;
+  width: 60%;
   color: var(--color-plate3);
   margin: 20px 0px;
 }
@@ -186,7 +186,7 @@ body {
   cursor: pointer;
 }
 .footer-hr {
-  width: 872px;
+  width: 65%;
   height: 1px;
   background: rgba(19, 19, 24, 0.1);
   margin: 50px 0px;
@@ -241,6 +241,12 @@ Responsive Styles
   .banner-btn {
     padding: 14px 70px;
   }
+  .footer-text {
+    width: 85%;
+  }
+  .footer-hr {
+    width: 90%;
+  }
 }
 /* ==> Tablet Device */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
@@ -265,5 +271,11 @@ Responsive Styles
   .type-search-icon {
     top: 32px;
     left: 647px;
+  }
+  .footer-text {
+    width: 85%;
+  }
+  .footer-hr {
+    width: 90%;
   }
 }
