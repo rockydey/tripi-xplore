@@ -50,6 +50,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 .logo {
   display: flex;
@@ -76,5 +77,33 @@ body {
   font-size: 1.125rem;
   font-weight: 700;
 }
+.hamburger {
+  display: none;
+}
 
-
+/* Responsive Styles */
+/* ==> Mobile Device */
+@media only screen and (max-width: 576px) {
+  #header {
+    margin: 24px 20px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger > img {
+    width: 1.75rem;
+    cursor: pointer;
+  }
+}
+/* ==> Tablet Device */
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  #header {
+    margin: 24px 20px;
+  }
+  .nav-menu {
+    gap: 1.5rem;
+  }
+}
