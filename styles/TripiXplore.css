@@ -14,9 +14,11 @@ body {
 
 /* Custom Property */
 :root {
-  --color-primary: rgba(19, 19, 24, 0.7);
-  --color-secondary: #5a5a5d;
-  --color-tertiary: #424247;
+  --color-plate1: #ff5400;
+  --color-plate2: rgba(19, 19, 24, 0.7);
+  --color-plate3: #5a5a5d;
+  --color-plate4: #424247;
+  --color-plate5: #131318;
 }
 
 /* Shared Style */
@@ -25,11 +27,11 @@ body {
   font-size: 1.25rem;
   font-weight: 800;
   border-radius: 8px;
-  background-color: #ff5400;
+  background-color: var(--color-plate1);
   padding: 14px 35px;
 }
 .title-primary {
-  color: #131318;
+  color: var(--color-plate5);
   font-size: 2.5rem;
   font-weight: 800;
 }
@@ -37,4 +39,40 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.625rem;
+}
+
+/* header styles */
+#header {
+  margin: 50px 0px 100px 0px;
+}
+/* navigation menu style */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+.logo-title {
+  color: var(--color-plate5);
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+.logo-title > span,
+.nav-menu .active {
+  color: var(--color-plate1);
+}
+.nav-menu {
+  display: flex;
+  gap: 2.5rem;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: var(--color-plate4);
+  font-size: 1.125rem;
+  font-weight: 700;
 }
