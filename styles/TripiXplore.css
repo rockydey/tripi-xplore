@@ -507,6 +507,9 @@ Responsive Styles
     height: 176px;
     border-radius: 16px;
   }
+  .kashmir {
+    background-size: 100%;
+  }
   .choose-container {
     grid-template-columns: repeat(1, 1fr);
   }
