@@ -172,9 +172,10 @@ body {
   margin: 24px 0px;
   color: var(--color-plate2);
 }
-#popular-tours li {
+.tour-content li {
   margin: 12px 0px;
   color: var(--color-plate3);
+  list-style-position: outside;
 }
 /* destination style */
 #destination {
@@ -403,6 +404,7 @@ body {
   margin-bottom: 20px;
   font-weight: 700;
   color: var(--color-plate5);
+  list-style-position: outside;
 }
 .place-video video {
   width: 95%;
@@ -451,7 +453,7 @@ body {
 Responsive Styles 
 -------------- */
 /* ==> Mobile Device */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   #header {
     margin: 24px 20px 50px 20px;
   }
@@ -540,6 +542,9 @@ Responsive Styles
   .offer-3 h4 {
     font-size: 1.25rem;
   }
+  .tour-content li, .place-container li{
+    margin-left: 20px;
+  }
   #perfect-place {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 45px;
@@ -568,7 +573,7 @@ Responsive Styles
   }
 }
 /* ==> Tablet Device */
-@media only screen and (min-width: 576px) and (max-width: 992px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
   #header {
     margin: 48px 20px;
   }
