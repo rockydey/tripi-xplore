@@ -461,7 +461,8 @@ Responsive Styles
   .award-container h2 {
     font-size: 1.25rem;
   }
-  .banner-text > span {
+  .banner-text > span,
+  .choose-us-text > span {
     display: inline;
   }
   .banner-search input {
