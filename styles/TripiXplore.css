@@ -564,6 +564,7 @@ Responsive Styles
   }
   .footer-hr {
     width: 90%;
+    margin: 25px 0px;
   }
 }
 /* ==> Tablet Device */
