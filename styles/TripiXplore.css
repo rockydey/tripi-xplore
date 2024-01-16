@@ -353,7 +353,8 @@ body {
 .subscribe-form h4 {
   font-size: 1.25rem;
 }
-.subscribe-form p {
+.subscribe-form p,
+.place-container p {
   color: var(--color-plate3);
   margin: 20px 0px;
 }
@@ -389,6 +390,23 @@ body {
 .newsletter-img button > span {
   font-weight: 800;
   display: block;
+}
+/* perfect place styles */
+#perfect-place {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 100px;
+}
+.place-container li {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--color-plate5);
+}
+.place-video video {
+  width: 95%;
+  border-radius: 16px;
 }
 
 /* footer style */
@@ -458,7 +476,8 @@ Responsive Styles
   #destination h2,
   .tour-content h2,
   #choose-us h2,
-  .award-container h2 {
+  .award-container h2,
+  .place-container h2 {
     font-size: 1.25rem;
   }
   .banner-text > span,
@@ -520,6 +539,13 @@ Responsive Styles
   .offer-2 h4,
   .offer-3 h4 {
     font-size: 1.25rem;
+  }
+  #perfect-place {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 45px;
+  }
+  .place-video video {
+    width: 100%;
   }
   #award {
     grid-template-columns: repeat(1, 1fr);
@@ -594,7 +620,13 @@ Responsive Styles
   .indonesia {
     border-radius: 16px;
   }
-
+  #perfect-place {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+  }
+  .place-video video {
+    width: 100%;
+  }
   #award {
     grid-template-columns: repeat(1, 1fr);
   }
